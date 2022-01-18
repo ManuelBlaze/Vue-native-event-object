@@ -5,6 +5,11 @@ const app = Vue.createApp({
       name: "",
     };
   },
+  computed: {
+    fullName() {
+      return this.name ? `${this.name} Escobar` : "";
+    },
+  },
   methods: {
     outputFullName() {
       return this.name ? `${this.name} Escobar` : "";
