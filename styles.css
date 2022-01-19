@@ -3,7 +3,7 @@
 }
 
 html {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 body {
@@ -20,6 +20,10 @@ header {
   text-align: center;
   width: 90%;
   max-width: 40rem;
+}
+
+input {
+  margin: 10px;
 }
 
 #events {
