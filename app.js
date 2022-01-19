@@ -3,13 +3,23 @@ const app = Vue.createApp({
     return {
       counter: 0,
       name: "",
+      fullName: "",
     };
   },
-  computed: {
-    fullName() {
-      return this.name ? `${this.name} Escobar` : "";
+  watch: {
+    name(value) {
+      if (value) {
+        this.fullName = `${value} Escobar`;
+      } else {
+        this.fullName = "";
+      }
     },
   },
+  // computed: {
+  //   fullName() {
+  //     return this.name ? `${this.name} Escobar` : "";
+  //   },
+  // },
   methods: {
     outputFullName() {
       return this.name ? `${this.name} Escobar` : "";
